@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', cursive;
+}
+#body{
+    background: url(img/hitback2.png) no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #AA96DA; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2BC0E4; 
+  }
+#top {
+    font-size: 3rem;
+    color:#FFFFD2;
+    -webkit-text-stroke: 1.5px #060606;
+}
+#intro {
+    font-family: "Ranchers", cursive;
+    font-size: 8rem;
+}
+#img-row {
+    padding-left: 30px;
+}
+#img-row img { 
+    height:90%;
+    width:90%;
+    padding: 2px;
+    border-radius: 2%;
+    border: 2px solid #060606;
+    transition-duration: 0.5s;
+}
+@media screen and (min-width:760px) {
+    #img-row img:hover { 
+        scale: 1.18;
+        translate: 4% -4.5%;
+        transition-duration: 0.5s;
+    }
+}
+#button-row button{
+    scale: 1.2;
+    color:#FFFFD2;
+    background-color:#AA96DA;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    border: 1px solid aliceblue;
+}
+#button-row button:hover{
+    color:#AA96DA;
+    background-color: #FFFFD2;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    border: 1px solid #C5FAD5;
+}
+#submit-button {
+    color:#FFFFD2;
+    background-color: #AA96DA;
+    transition-duration: 0.2s;
+}
+#submit-button:hover {
+    color:#AA96DA;
+    background-color: #FFFFD2;
+    transition-duration: 0.2s;
+}
+
+#register-form, #login-form, #otp-body {
+	background: linear-gradient(-45deg, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite;
+	height: 100%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+    #intro {
+        font-size: 4rem;
+    }
+ }

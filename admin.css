@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', cursive;
+}
+#top-container {
+    background: url(img/food.jpg) center center fixed;
+    background-color:transparent;
+    border: 2px solid black;
+}
+#top {
+    font-size: 3rem;
+    color:#FFFFD2;
+    -webkit-text-stroke: 1.5px #111111;
+}
+#logo {
+    height:170px;
+    width: 200px;
+}
+#intro {
+    font-family: "Ranchers", cursive;
+    font-size: 6rem;
+}
+#welcome-text {
+    font-family: "Ranchers", cursive;
+    font-size: 4rem;
+}
+#nav-bar {
+    background-color:#FFFFD2;
+    border-bottom: 2px solid #AA96DA;
+}
+#nav-bar button {
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    size:100%;
+    font-family: "Ranchers", cursive;
+    font-size: larger;
+    color:#AA96DA;
+    -webkit-text-stroke: 0.5px #111111;
+    background-color:#FFFFD2;
+    border: 1px solid transparent;
+    transition-duration: 0.4s;
+}
+#nav-bar button:hover, #nav-bar button:focus {
+    background: linear-gradient(-45deg, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite;
+	height: 100%;
+    transition-duration: 0.4s;
+    border: 1px solid #0a0a0a;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #AA96DA; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2BC0E4; 
+  }
+#profile-manager {
+    display: none;
+}
+#user-manager {
+    display: none;
+}
+#menu-manager {
+    display: block;
+}
+body, #new-item {
+	background: linear-gradient(-45deg, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite;
+	height: 100%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#logout {
+    border:2px solid transparent;
+}
+#logout:hover {
+    border: 2px solid white;
+}
+#small-screen {
+    display:none;
+}
+@media screen and (max-width: 700px) {
+    #my-body {
+        display:none;
+    }
+    #small-screen {
+        display:block;
+    }
+}
